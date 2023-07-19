@@ -18,6 +18,13 @@ body{
     height: 100vh; 
 
     }
+@media(max-width:1000px){
+    body{
+   height:60px;
+    }
+}
+        
+        
     .container{
         width: 1000px;
         height: 500px;
@@ -28,18 +35,7 @@ body{
         display: flex;
         flex-direction: row;
     }
-@media(max-width:1000px){
-    .container{
-        width:600px;
-        height:300px;
-    }
-}
-@media(min-width:1001px){
-    .container{
-        width:1000px;
-        height:500px;
-    }
-}
+
     .tab_box{
         width: 230px;
         display: flex;
