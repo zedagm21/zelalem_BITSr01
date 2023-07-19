@@ -18,13 +18,7 @@ body{
     height: 100vh; 
 
     }
-@media(max-width:1000px){
-    body{
 
-        width:400px;
-    }
-}
-        
         
     .container{
         width: 1000px;
