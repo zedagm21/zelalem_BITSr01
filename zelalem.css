@@ -28,18 +28,7 @@ body{
         display: flex;
         flex-direction: row;
     }
-@media(max-width:600px){
-    .container{
-        width:600px;
-        height:500px;
-    }
-}
-@media(min-width:601px){
-    .container{
-        width:1000px;
-        height:500px;
-    }
-}
+
     .tab_box{
         width: 230px;
         display: flex;
