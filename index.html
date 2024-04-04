@@ -1,42 +1,37 @@
-
-
-
-
 <!DOCTYPE html>
 <html lang="en">
- <head>
-     <meta charset="UTF-8">
-     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>Zelalem Fissha</title>
-     <link rel="stylesheet" href="zelalem.css">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zelalem Fissha</title>
+    <link rel="stylesheet" href="zelalem.css">
 </head>
-
 <body>
-     <div class="container">
-          <div class="tab_box">
-              <button class="tab_btn active">Home</button>
-              <button class="tab_btn">About me</button>
-              <button class="tab_btn">Contact me</button>
+    <div class="header">
+        <h1 class="portfolio-text">Portfolio</h1>
+        <div class="tab_box">
+            <button class="tab_btn active">Home</button>
+            <button class="tab_btn">About me</button>
+            <button class="tab_btn">Contact me</button>
+        </div>
+    </div>
 
-          </div>
-          
-          <div class="content_box">
-              <div class="content active">
-                   <h2>Home</h2>
-                   <p>
+    <div class="content_box">
+        <div class="content active">
+            <h2>Home</h2>
+            <p>
+                <img src="my4.jpg" class="home-image">
+                <strong>Zelalem fissha tilahun<br></strong> 
+                ID BDU1405490<br>
+                Department Of Software Engineering<br>
+                Second Year 
+            </p>
+        </div>
 
-                    <img src="my4.jpg" class="home-image">
-                  <strong>Zelalem fissha tilahun<br></strong> 
-                
-                   ID BDU1405490<br>
-                   Department Of Software Engineering<br>
-                   Seconed Year 
-                   </p>
-              </div>
-              <div class="content">
-                <h2>About me</h2>
-                <p>
+        <div class="content">
+            <h2>About me</h2>
+            <p class="describe">
                 My name is Zelalem Fissha, and I was born in Bahrdar in 1995 e.c.<br>
                 I started my education in Marta Acadami, where I studied from<br>
                 kindergarten up to grade 8. Afterward, I completed my secondary<br>
@@ -47,80 +42,72 @@
                 I aspire to become a proficient web and mobile application <br>
                 developer, and during my time at BDU University, I am determined <br>
                 to acquire all the necessary web development skills.<br>
-                 My ultimate dream is to secure a job before graduating <br>
-                 and use my skills to support my family.<br>
+                My ultimate dream is to secure a job before graduating <br>
+                and use my skills to support my family.<br>
                 To view my academic status up to now, you can download the file <br>
                 using the "Download" button . Thank you very much.
-                </p>
-                <a href="mydocument.pdf"  download ><button class="down">Download</button></a>
-           </div>
+            </p>
+            <a href="mydocument.pdf" download><button class="down">Download</button></a>
+        </div>
 
-           <div class="content">
+        <div class="content">
             <h2>Contact me</h2>
-           
-        <div class="card">
-            <img src="my1.jpg" class="profile-img">
-            <div class="info">
-                 <h1> DAGMAWI</h1>
-                 <p>ZELALEM FISSHA TILAHUN</p>
-                  <p>
-                     <img src="telegram logo.jpg" class="telegram">
-                     @zedagm21
-                  </p>
-                  <p class="phone">
-                    <img src="mobile.png" class="telegram">
-                    0963723151
-                  </p>
-                  <p class="email">
-                    <img src="email.png" class="telegram"> 
-                    dagmawifissha6@gmail.com
-                  </p>
-                 <div class="buttons">
-                  
-                  <a href="mailto:dagmawifissha6@gmail.com"  target="_blank"><button class="send">To email</button></a>
-
+            <div class="card">
+                <img src="my1.jpg" class="profile-img">
+                <div class="info">
+                    <h1> DAGMAWI</h1>
+                    <p>ZELALEM FISSHA TILAHUN</p>
+                    <p>
+                        <img src="telegram logo.jpg" class="telegram">
+                        @zedagm21
+                    </p>
+                    <p class="phone">
+                        <img src="mobile.png" class="telegram">
+                        0963723151
+                    </p>
+                    <p class="email">
+                        <img src="email.png" class="telegram"> 
+                        dagmawifissha6@gmail.com
+                    </p>
+                    <div class="buttons">
+                        <a href="mailto:dagmawifissha6@gmail.com" target="_blank"><button class="send">To email</button></a>
+                    </div>
                 </div>
             </div>
-
-
         </div>
+        <img src="tenor.gif" alt="Running Toy" class="running-toy">
+    </div>
+  
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const tabButtons = document.querySelectorAll('.tab_btn');
+            const allContent = document.querySelectorAll('.content');
+
+            tabButtons.forEach((tab, index) => {
+                tab.addEventListener('click', (e) => {
+                    tabButtons.forEach(tab => {
+                        tab.classList.remove('active');
+                    });
+                    tab.classList.add('active');
+
+                    allContent.forEach(content => {
+                        content.classList.remove('active');
+                    });
+                    allContent[index].classList.add('active');
+
+                    var line = document.querySelector('.line');
+                    line.style.width = e.target.offsetWidth + "px";
+                    line.style.left = e.target.offsetLeft + "px";
+
+                    allContent.forEach(content => {
+                        content.classList.remove('active');
+                    });
+                    allContent[index].classList.add('active');
+                });
+            });
+        });
         
-       </div>
-          </div>
-        </div>
-        
-        <script>
-          document.addEventListener('DOMContentLoaded', function() {
-              const tabButtons = document.querySelectorAll('.tab_btn');
-              const allContent = document.querySelectorAll('.content');
-      
-              tabButtons.forEach((tab, index) => {
-                  tab.addEventListener('click', (e) => {
-                      tabButtons.forEach(tab => {
-                          tab.classList.remove('active');
-                      });
-                      tab.classList.add('active');
-      
-                      allContent.forEach(content => {
-                          content.classList.remove('active');
-                      });
-                      allContent[index].classList.add('active');
-      
-                      var line = document.querySelector('.line');
-                      line.style.width = e.target.offsetWidth + "px";
-                      line.style.left = e.target.offsetLeft + "px";
-      
-                      allContent.forEach(content => {
-                          content.classList.remove('active');
-                      });
-                      allContent[index].classList.add('active');
-                  });
-              });
-          });
-      </script>                                                    
-     
-                                                                                       
-     
-      
+    </script>  
 </body>
 </html>
