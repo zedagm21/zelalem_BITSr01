@@ -228,7 +228,7 @@ body {
     }
 
     .content_box {
-        margin-left: 0; 
+        margin-left: 10px; 
         width: 100%; 
     }
 
@@ -242,7 +242,7 @@ body {
         margin-right: 0; 
     }
     .describe{
-        font-size: 12px;
+        font-size: 14px;
 
     }
 
