@@ -88,6 +88,9 @@ cursor: pointer;
     padding: 20px;
     color: white;
  }
+.content{
+    color:white;
+}
  .content_box .content{
     display: none;
     animation: moving .5s ease;
