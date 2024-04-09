@@ -250,8 +250,9 @@ cursor: pointer;
       border-radius:10px;
       
    }  
-    .card img{
+    .profile-img{
         width:50px;
+        hieght:50px;
     }
     
    .content h3{
