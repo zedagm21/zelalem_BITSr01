@@ -242,22 +242,25 @@ cursor: pointer;
   
    }
    .card{
-      background: rgba(255, 255, 255, 0.192);
+      /*background: rgba(255, 255, 255, 0.192);*/
       display:flex;
       align-items:center;
-      padding:30px;
-      width:80%;
+      padding:50px;
+      width:90%;
       border-radius:10px;
       
    }  
-    .profile-img{
-        width:50px;
-        hieght:50px;
-    }
+    
     
    .content h3{
       display: none;
    }
+    .home-image{
+        width:150px;
+        hieght:150px;
+        border-radius:75px;
+    }
+    
    
 }
 
