@@ -230,7 +230,7 @@ cursor: pointer;
    .tab_box .tab_btn{
       font-size: 16px;
       padding: 14px;
-      color: #191818;
+      /*color: #191818;*/
    }
    .home-image{
       width: 200px;
@@ -246,7 +246,7 @@ cursor: pointer;
       display:flex;
       align-items:center;
       padding:50px;
-      width:90%;
+      width:80%;
       border-radius:10px;
       
    }   
