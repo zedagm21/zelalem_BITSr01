@@ -11,7 +11,7 @@
     font-family: 'Poppins',sans-serif;
 }
 body{
-    background-image: url('bgimage.jpg');
+    background-image: url('mirror12.jpg');
     background-position: center;
     background-size: 100%;
     display: flex;
@@ -108,9 +108,7 @@ cursor: pointer;
  .content_box .content h2{
     margin-bottom: 10px;
  }
- .aboutpara{
-  background-color: rgba(230, 223, 223, 0.441);
- }
+ 
  .line{
    position: absolute;
    top: 90px;
@@ -151,7 +149,7 @@ cursor: pointer;
 }
 .info{
    margin-left: 30px;
-   color: #191818;
+   color: white;
    font-weight: 500;
    margin-bottom: 20px;
 
@@ -202,13 +200,13 @@ cursor: pointer;
 
 .phone{
 
-   color: #1b1a1a;
+   color: white;
    font-style: italic;
 }
 
 .email{
 
-   color: #3a3a3a;
+   color: white;
    font-style: italic;
    margin-bottom: 30px;
 }
@@ -252,10 +250,7 @@ cursor: pointer;
    .content h3{
       display: none;
    }
-   .Portfolio{
-      color: #191818;
-
-   }
+   
 }
 
 
